@@ -10,11 +10,18 @@ module.exports = function(environment) {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
         // e.g. 'with-controller': true
+        }
       },
-      EXTEND_PROTOTYPES: {
-        // Prevent Ember Data from overriding Date.parse.
-        Date: false
-      }
+
+      firebase: {
+
+
+          apiKey: "AIzaSyDNGN11n1JDS0ctUsxMhtvzvfQlS-IUn6I",
+          authDomain: "vacation-bnb.firebaseapp.com",
+          databaseURL: "https://vacation-bnb.firebaseio.com",
+          storageBucket: "vacation-bnb.appspot.com",
+          messagingSenderId: "338752701164"
+
     },
 
     APP: {
