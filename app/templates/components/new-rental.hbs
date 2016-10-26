@@ -1,0 +1,35 @@
+{{#if addNewRental}}
+  <h1>New Rentals</h1>
+  <div>
+    <form>
+      <div class="form-group">
+        <label for="owner">owner</label>
+        {{input value=owner id="owner"}}
+      </div>
+
+      <div class="form-group">
+        <label for="type">Type</label>
+        {{input value=type if="owner"}}
+      </div>
+
+      <div class="form-group">
+        <label for="city">city</label>
+        {{input value=city if="city"}}
+      </div>
+
+
+      <div class="form-group">
+        <label for="bedrooms"> number of besdrooms</label>
+        {{input value=bedrooms if="bedrooms"}}
+      </div>
+
+      <div class="form-group">
+        <label for="image">Image URL</label>
+        {{input value=image id="image"}}
+      </div>
+      <button {{action 'saveRental1'}}>Save</button> 
+    </form>
+  </div>
+{{else}}
+  <button {{action 'rentalFormShow'}}>new rental</button>
+  {{/if}}

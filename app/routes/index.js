@@ -7,9 +7,18 @@ export default Ember.Route.extend({
     //finaA  method w/ argument=rental tell Ember Data to find all records of the type rental in the store, & return them to our application.
   },
   actions: {
+    saveRental3(params) {
+      var newRental = this.store.createRecord('rental', params);
+      newRental.save();
+      this.transitionTo('index');
+      //save feature
+    },
+
   destroyRental(rental) {
     rental.destroyRecord();
     this.transitionTo('index');
+
+    //Delete feature
     }
   }
 });
