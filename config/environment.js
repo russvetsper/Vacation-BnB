@@ -16,11 +16,11 @@ module.exports = function(environment) {
       firebase: {
 
 
-          apiKey: "AIzaSyDNGN11n1JDS0ctUsxMhtvzvfQlS-IUn6I",
-          authDomain: "vacation-bnb.firebaseapp.com",
-          databaseURL: "https://vacation-bnb.firebaseio.com",
-          storageBucket: "vacation-bnb.appspot.com",
-          messagingSenderId: "338752701164"
+        apiKey: "AIzaSyAsnPgBaT6pV1dSku_AQETxxvow3zPfaXY",
+  authDomain: "vacation-bnb-fa795.firebaseapp.com",
+  databaseURL: "https://vacation-bnb-fa795.firebaseio.com",
+  storageBucket: "vacation-bnb-fa795.appspot.com",
+  messagingSenderId: "31493903732"
 
     },
 
